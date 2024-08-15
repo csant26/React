@@ -1,0 +1,29 @@
+#{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  #nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: bisque;
+    height: 68px;
+  }
+  
+  #menus{
+    display: flex;
+  }
+  /* menus>p means direct descendants. menus p means all descendants */
+  #menus p{
+    padding: 0px 10px;
+  }
+  #logo{
+    display: flex;
+    justify-content: center;
+  }
+  #logo h1{
+    padding: 0px 10px;
+  }
