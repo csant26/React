@@ -9,7 +9,7 @@ const Navbar = ({title}) =>{
           <h1>{title}</h1>
         </section>
         <section id='menus'>
-          <p>Home</p>
+          <p><a href="../pages/home">Home</a></p>
           <p>Documents</p>
           <p>Seting</p>
           <p>Profile</p>
