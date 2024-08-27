@@ -1,15 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App, { Title } from './App';
 import reportWebVitals from './reportWebVitals';
-import HomePage from './home_page';
+import { BrowserRouter } from 'react-router-dom';
+import Downloads from './pages/downloads';
+import Documents from './pages/documents';
+import Profile from './pages/profile';
+import Settings from './pages/settings';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    <HomePage/>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App/>}>
+      <Route index element={<Home/>}/>
+      <Route path="downloads"element={<Downloads/>}/>
+      <Route path="documents" element={<Documents/>}/>
+      <Route path="profile" element={<Profile/>}/>
+      <Route path="settings"element={<Settings/>}/>
+      </Route>
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
