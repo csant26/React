@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/navstyles.css"
 
 const Navbar = ({title}) =>{
@@ -9,11 +10,11 @@ const Navbar = ({title}) =>{
           <h1>{title}</h1>
         </section>
         <section id='menus'>
-          <p><a href="../pages/home">Home</a></p>
-          <p>Documents</p>
-          <p>Seting</p>
-          <p>Profile</p>
-          <p>Downloads</p>
+          <p><Link to = "/">Home</Link></p>
+          <p><Link to = "/documents">Documents</Link></p>
+          <p><Link to="/settings">Settings</Link></p>
+          <p><Link to="/profile">Profile</Link></p>
+          <p><Link to="/downloads">Downloads</Link></p>
         </section>
       </nav>
         </>
