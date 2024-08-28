@@ -18,9 +18,29 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,50%);
+    /* transform: translate(-50%,50%); */
     font-size: 50px;
     color: red;
+    /* keyframes ma defined 2 ta properties lai transition gareko */
+    transition: transform 600ms ease-in, opacity 600 ms, ease-out;
+}
+.text-change{
+    animation: scaleText 1s linear;
+}
+@keyframes scaleText {
+    /* 0, 50, 100 are the three state changes in which the animation occurs. */
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 #button:hover{
