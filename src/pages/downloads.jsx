@@ -1,5 +1,6 @@
 import Navbar from "../components/navbar"
 const Downloads = () => {
+    
     return(
         <>
         <Navbar title={"Downloads"}/>

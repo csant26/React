@@ -1,0 +1,38 @@
+#button{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    transition: box-shadow 600ms ease-in-out;
+    transition: transform 600ms ease;
+}
+#center-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    font-size: 50px;
+    color: red;
+}
+
+#button:hover{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+    /* 1s defines that 0 to 360 degrees takes 1 second time. */
+    animation: rotate-button 1s linear infinite;
+}
+@keyframes rotate-button {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
