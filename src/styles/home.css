@@ -14,6 +14,10 @@
     transition: box-shadow 600ms ease-in-out;
     transition: transform 600ms ease;
 }
+.minusButton{
+    /* ! means override */
+    right: 100px !important;
+}
 #center-text{
     position: absolute;
     top: 50%;
@@ -24,6 +28,7 @@
     /* keyframes ma defined 2 ta properties lai transition gareko */
     transition: transform 600ms ease-in, opacity 600 ms, ease-out;
 }
+
 .text-change{
     animation: scaleText 1s linear;
 }

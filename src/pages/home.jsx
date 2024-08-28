@@ -11,6 +11,7 @@ export default function Home(){
         setCount(prevCount => prevCount + 1);
     }
     const handleDecrement = () =>{
+        startAnimation();
         setCount(prevCount => prevCount - 1);
     }
     const startAnimation = () =>{
@@ -25,6 +26,7 @@ export default function Home(){
         <Navbar title={"Home Page"}/>
         <p id="center-text"className={animate ? "text-change":""} onAnimationEnd={stopAnimation}>{count}</p>
         <div id="button" onClick={handleIncrement}>+</div>
+        <div id="button" onClick={handleDecrement} className="minusButton">-</div>
         </>
     );
 }
