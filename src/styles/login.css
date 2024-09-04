@@ -40,3 +40,15 @@
     color: whitesmoke;
     font-size: 20px;
 }
+#signup-field{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 16px;
+}
+#signup-field a{
+    text-decoration: none;
+    color: brown;
+    font-size: 20px;
+    font-style: italic;
+}

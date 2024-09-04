@@ -1,11 +1,19 @@
 import { useState } from "react";
 import "../styles/login.css"
 import CustomFormField from "../components/custom_form_field";
+import { Link } from "react-router-dom";
 const Login = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
-    const handleSubmit = ()=>{
+    const handleSubmit = (event)=>{
+        event.preventDefault();
+        if(email.length<6){
+            alert("Please enter email.")
+        }
+        if(password.length<6){
+            alert("Please enter a strong password.")
+        }
         console.log("email = ", email)
         console.log("password = ", password)
     }
@@ -40,6 +48,9 @@ const Login = () => {
                 </div> */}
                 <div id="login-button">
                     <input value="login" type="submit"/>
+                </div>
+                <div id="signup-field">
+                    <p>Don't have an account?<Link to="/register">Signup</Link></p>
                 </div>
             </div>
         </form>

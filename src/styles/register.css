@@ -1,0 +1,19 @@
+#registration-box{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 20px 20px rgba(121, 223, 66, 0.684);
+    padding: 20px;
+    width: 650px;
+    border-radius: 20px;
+}
+
+.reg-row-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reg-row-field input{
+    width: 300px
+}
