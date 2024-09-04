@@ -15,6 +15,7 @@ const Navbar = ({title}) =>{
           <p><Link to="/settings">Settings</Link></p>
           <p><Link to="/profile">Profile</Link></p>
           <p><Link to="/downloads">Downloads</Link></p>
+          <p><Link to="/login">Login</Link></p>
         </section>
       </nav>
         </>

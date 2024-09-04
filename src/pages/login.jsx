@@ -35,8 +35,11 @@ const Login = () => {
                     value={password}
                     onChange={handlePasswordChange}
                 />
-                <div id="login-button" onClick={handleSubmit}>
+                {/* <div id="login-button" onClick={handleSubmit}>
                     Login
+                </div> */}
+                <div id="login-button">
+                    <input value="login" type="submit"/>
                 </div>
             </div>
         </form>
