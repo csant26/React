@@ -17,3 +17,7 @@
 .reg-row-field input{
     width: 300px
 }
+#gender-field{
+    display: flex;
+    justify-content: space-between;
+}
