@@ -16,6 +16,7 @@ const Navbar = ({title}) =>{
           <p><Link to="/profile">Profile</Link></p>
           <p><Link to="/downloads">Downloads</Link></p>
           <p><Link to="/login">Login</Link></p>
+          <p><Link to="/usercard">User</Link></p>
         </section>
       </nav>
         </>
