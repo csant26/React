@@ -1,4 +1,4 @@
-import "./user_card.css";
+import "../styles/user_card.css";
 
 const UserCard = () => {
   return (

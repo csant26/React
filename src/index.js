@@ -12,6 +12,7 @@ import Home from './pages/home';
 import Login from './pages/login';
 import Register from './pages/register';
 import UserCard from './components/user_card';
+import Users from './pages/user';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,7 +27,7 @@ root.render(
       <Route path="settings"element={<Settings/>}/>
       <Route path="login" element={<Login/>}/>
       <Route path="register" element={<Register/>}/>
-      <Route path="usercard" element={<UserCard/>} />
+      <Route path="usercard" element={<Users/>} />
       </Route>
     </Routes>
     </BrowserRouter>
