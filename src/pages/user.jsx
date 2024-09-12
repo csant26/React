@@ -27,7 +27,7 @@ const Users = ()=>{
                 {
                     allUsers.map(
                         (user)=>{
-                            return <UserCard/>
+                            return <UserCard user = {user}/>
                         }
                     )
                 }

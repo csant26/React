@@ -1,39 +1,39 @@
 import "../styles/user_card.css";
 
-const UserCard = () => {
+const UserCard = ({user}) => {
   return (
     <>
       <div id="box1">
         <div id="header">
-          <h1>Csant Shrestha</h1>
-          <h3>@csant</h3>
+          <h1>{user.name}</h1>
+          <h3>@{user.username}</h3>
         </div>
         <div>
           <div id="section1">
             <p>
-              <strong>Email:</strong> shishant@gmail.com
+              <strong>Email:</strong>{user.email}
             </p>
             <p>
-              <strong>Phone:</strong> 123
+              <strong>Phone:</strong>{user.phone}
             </p>
             <p>
-              <strong>Website:</strong> shishant@stha.org
+              <strong>Website:</strong>{user.website}
             </p>
           </div>
 
           <div id="section2">
             <p>
               <strong>Address:</strong>
-              Tinkune-32, Subidhanagar
+              {user.address.street}
             </p>
           </div>
           <div id="company">
             <strong>Company:</strong>
-            <p>ABC Company</p>
+            <p>{user.company.name}</p>
             <strong>Catchphrase:</strong>
-            <p>"Bla bla bla"</p>
+            <p>{user.company.catchPhrase}</p>
             <strong>Business:</strong>
-            <p>Do business</p>
+            <p>{user.company.bs}</p>
           </div>
         </div>
       </div>

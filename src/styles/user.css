@@ -5,3 +5,8 @@
     text-shadow: 2px 2px 5px black;
     text-align: center;
 }
+
+#user-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}

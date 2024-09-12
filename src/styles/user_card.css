@@ -4,17 +4,19 @@
 }
 #box1{
     align-items: center;
-    max-width: 300px;
+    max-width: 400px;
     justify-content: center;
     border: 1px solid;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
+    margin: 20px;
 }
 #box1 #header{
     align-items: center;
-    background-color: blue;
+    background-color: purple;
     width: 100%;
+    text-align: center;
 }
-#header h3{
-    margin-left: 100px;
-}
+/* #box1 #header h3{
+    margin-left: 120px;
+} */
