@@ -8,5 +8,10 @@
 
 #user-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    /* jatti ota columns tetti otai 1fr
+    but, responsive huna pryo resize huda. so, repeat() function use.*/
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr)) ;
+    padding: 0px 20px;
+    gap: 15px;
+    padding-bottom: 20px;
 }
