@@ -13,6 +13,9 @@ import Login from './pages/login';
 import Register from './pages/register';
 import UserCard from './components/user_card';
 import Users from './pages/user';
+import PostScreen from './pages/post_screen';
+import PostForm from './components/post_form';
+import AddPost from './pages/add_post';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +31,8 @@ root.render(
       <Route path="login" element={<Login/>}/>
       <Route path="register" element={<Register/>}/>
       <Route path="usercard" element={<Users/>} />
+      <Route path="posts" element={<PostScreen/>}/>
+      <Route path="addpost" element={<AddPost/>}/>
       </Route>
     </Routes>
     </BrowserRouter>
